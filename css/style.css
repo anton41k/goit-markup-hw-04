@@ -91,31 +91,27 @@ section:last-child {
 
 .header-cont-static {
   color: var(--gray-text);
-  display: inline-flex;
 }
 
-/*icon mail*/
-.header-cont .mail::before {
-  content: '';
-  width: 16px;
-  height: 12px;
+/*icon mail, tel*/
+.icon {
+  fill: currentColor;
+
   margin-right: 10px;
-  background-size: contain;
-  background-image: url(../images/svg/mail.svg);
 }
 
-/*icon tel*/
-.header-cont .tel::before {
-  content: '';
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-size: contain;
-  background-image: url(../images/svg/tel.svg);
+.header-cont,
+.header-cont .item {
+  color: var(--gray-text);
+  display: flex;
+  align-items: center;
 }
 
-.header-hover:hover,
-.header-hover:focus {
+/*hover link contact and icon*/
+.header-cont .item:hover .icon,
+.header-cont .item:focus .icon,
+.header .item:hover .header-hover,
+.header .item:focus .header-hover {
   color: var(--blue-text);
 }
 
@@ -132,7 +128,6 @@ section:last-child {
 }
 
 .header-nav,
-.header-cont,
 .header .container {
   display: flex;
   align-items: center;
@@ -157,11 +152,8 @@ section:last-child {
 }
 
 /*линия внизу header*/
-/*.header {
-  border-bottom: 1px solid var(--gray-header-line); 
-}*/
-.line {
-  outline: 0.5px solid var(--gray-header-line);
+.header {
+  border-bottom: 1px solid var(--gray-header-line);
 }
 
 /*Main*/
@@ -396,11 +388,6 @@ section:last-child {
 .footer-address-tel {
   color: var(--gray-op06-text);
   text-decoration: none;
-}
-
-.footer-address a:focus,
-.footer-address a:hover {
-  color: var(--white-text);
 }
 
 .footer .container {
