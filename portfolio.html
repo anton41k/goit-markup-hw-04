@@ -36,10 +36,21 @@
             </nav>
             <ul class="header-cont res-marg-pad">
                 <li class="item">
-                    <a class="header-cont-static header-hover mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    
+                    <a class="header-cont-static header-hover hover" href="mailto:info@devstudio.com">
+                        <svg class="icon" width="16" height="12">
+                            <use href="./images/svg/sprite.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
                 <li class="item">
-                    <a class="header-cont-static header-hover tel" href="tel:+380961111111">+38 096 111 11 11</a>
+    
+                    <a class="header-cont-static header-hover hover" href="tel:+380961111111">
+                        <svg class="icon" width="10" height="16">
+                            <use href="./images/svg/sprite.svg#icon-tel"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -70,12 +81,11 @@
                 <div class="container-project">
                     <ul class="main-portfolio-project res-marg-pad">
                         <li class="item">
-                            <a href="#" class="link">
-                                <img src="./images/technocrack.jpg" alt="Технокряк" width="370" class="img">
-                                <div class="frame">
+                            
+                            <img src="./images/technocrack.jpg" alt="Технокряк" width="370" class="img">
+                            <a href="#" class="frame">
                                     <h2 class="name res-marg-pad">Технокряк</h2>
                                     <p class="project res-marg-pad">Веб-сайт</p>
-                                </div>
                             </a>
                         </li>
                         <li class="item">
@@ -155,18 +165,45 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="logo">
-                Web<span class="logo-studio">Studio</span>
-            </a>
-            <address class="footer-address">
-                <a href="#" class="footer-address-geo">г. Киев, пр-т Леси Украинки, 26</a>
-                <a href="mailto:info@devstudio.com" class="footer-address-mail">info@devstudio.com</a>
-                <a href="tel:+380961111111" class="footer-address-tel">+38 096 111 11 11</a>
-            </address>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="frame-address">
+                    <a href="./index.html" class="logo">
+                        Web<span class="logo-studio">Studio</span>
+                    </a>
+                    <address class="footer-address">
+                        <a href="#" class="footer-address-geo">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a href="mailto:info@devstudio.com" class="footer-address-mail">info@devstudio.com</a>
+                        <a href="tel:+380961111111" class="footer-address-tel">+38 096 111 11 11</a>
+                    </address>
+                </div>
+                <div class="footer-network">
+                    <h2 class=" res-marg-pad">присоединяйтесь</h2>
+                    <div class="social-networks">
+                        <a href="https://www.instagram.com/" class="link">
+                            <svg class="icon-networks" width="20" height="20">
+                                <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" class="link">
+                            <svg class="icon-networks" width="20" height="20">
+                                <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://uk-ua.facebook.com/" class="link">
+                            <svg class="icon-networks" width="20" height="20">
+                                <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/" class="link">
+                            <svg class="icon-networks" width="20" height="20">
+                                <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 </body>
 
