@@ -237,9 +237,12 @@ section:last-child {
 .frame-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  min-height: 120px;
   background-color: var(--bgr-wgray);
   border-radius: 4px;
-  padding: 25px 0;
+  /*padding: 25px 0;*/
 }
 
 /*employment*/
@@ -296,7 +299,7 @@ section:last-child {
   margin-right: calc(-1 * var(--set-gap));
 }
 
-.main-team .item {
+.main-team-ul > .item {
   background-color: var(--white-text);
 
   border-radius: 0px 0px 4px 4px;
@@ -308,13 +311,6 @@ section:last-child {
   margin-right: var(--set-gap);
 }
 
-.social-networks .link {
-  background-color: var(--white-text);
-  color: var(--gray-text);
-  padding: 12px;
-  border-radius: 50%;
-}
-
 /*icon networks*/
 .social-networks {
   height: 44px;
@@ -322,20 +318,29 @@ section:last-child {
   margin: 16px 32px 30px 32px;
 
   display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
+
 
 .social-networks .link {
   background-color: var(--white-text);
   color: var(--gray-text);
-  padding: 12px;
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-networks {
   fill: currentColor;
 }
 
-.social-networks .link:not(:last-child) {
+.social-networks .item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -353,8 +358,6 @@ section:last-child {
 }
 
 .main-customers-ul .item {
-  border: 1px solid var(--bord-customers);
-  border-radius: 4px;
   flex-basis: calc(100% / 6 - var(--set-gap));
   margin-right: var(--set-gap);
 }
@@ -366,6 +369,8 @@ section:last-child {
 
   min-height: 88px;
   color: var(--bord-customers);
+  border: 1px solid var(--bord-customers);
+  border-radius: 4px;
 }
 
 .customers-icon {
@@ -374,6 +379,7 @@ section:last-child {
 
 .main-customers-ul .link:hover {
   color: var(--blue-text);
+  border-color: var(--bord-customers);
 }
 
 /*Footer*/
@@ -518,7 +524,7 @@ section:last-child {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.main-portfolio-project .frame {
+.main-portfolio-project .link {
   text-decoration: none;
   border-left: 1px solid var(--gray-border);
   border-right: 1px solid var(--gray-border);
