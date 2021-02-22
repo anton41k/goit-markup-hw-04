@@ -135,19 +135,13 @@ section:last-child {
 }
 
 .header .logo {
+  margin-right: 93px;
   padding: 25px 0;
+
   display: block;
 }
 
-.header-nav .item:first-child {
-  margin-right: 93px;
-}
-
-/*начиная с 2-ог елемента кроме последнего*/
-.header-nav .item:nth-child(1n + 2):not(:last-child) {
-  margin-right: 50px;
-}
-
+.header-nav .item:not(:last-child),
 .header-cont .item:first-child {
   margin-right: 50px;
 }
@@ -185,6 +179,7 @@ section:last-child {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text);
+  margin-bottom: 30px;
 }
 
 .main-hero-bt {
@@ -198,7 +193,6 @@ section:last-child {
 
   padding: 10px 32px;
   border-radius: 4px;
-  margin-top: 30px;
 }
 
 .main-hero-container {
@@ -249,6 +243,10 @@ section:last-child {
 }
 
 /*employment*/
+.main-employment{
+  padding-bottom: 94px;
+}
+
 .main-employment h2,
 .main-team h2,
 .main-customers h2 {
@@ -273,6 +271,7 @@ section:last-child {
 /*team*/
 .main-team {
   background-color: var(--bgr-wgray);
+  padding-bottom: 94px;
 }
 
 .main-team-ul .name,
