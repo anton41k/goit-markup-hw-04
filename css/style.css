@@ -13,6 +13,7 @@
   --set-gap: 30px;
   --bgr-hero: rgba(47, 48, 58, 0.4);
   --bord-customers: rgba(175, 177, 184, 1);
+  --pad-container: 94px
 }
 
 body {
@@ -53,15 +54,15 @@ body {
   cursor: pointer;
 }
 
-section:not(.main-hero) {
-  /*все селекторы кроме Героя*/
+/*section:not(.main-hero) {
+  /*все селекторы кроме Героя
   padding-top: 94px;
 }
 
 section:last-child {
-  /*последний селектор страницы*/
+  /*последний селектор страницы
   padding-bottom: 94px;
-}
+}*/
 
 /*Logo*/
 
@@ -203,6 +204,11 @@ section:last-child {
 }
 
 /*accomplishments*/
+.main-accomplishments .container{
+  padding-top: var(--pad-container);
+  padding-bottom: var(--pad-container);
+}
+
 .main-accomplishments .name {
   font-weight: 700;
   font-size: 14px;
@@ -243,8 +249,8 @@ section:last-child {
 }
 
 /*employment*/
-.main-employment{
-  padding-bottom: 94px;
+.main-employment .container{
+  padding-bottom: var(--pad-container);
 }
 
 .main-employment h2,
@@ -271,7 +277,11 @@ section:last-child {
 /*team*/
 .main-team {
   background-color: var(--bgr-wgray);
-  padding-bottom: 94px;
+}
+
+.main-team .container{
+  padding-top: var(--pad-container);
+  padding-bottom: var(--pad-container);
 }
 
 .main-team-frame{
@@ -357,6 +367,12 @@ section:last-child {
 }
 
 /*customers*/
+
+.main-customers .container{
+  padding-top: var(--pad-container);
+  padding-bottom: var(--pad-container);
+}
+
 .main-customers h2{
   margin-bottom: 70px;
 }
@@ -463,6 +479,12 @@ section:last-child {
 }
 
 /*portfolio button*/
+
+.main-portfolio .container{
+  padding-top: var(--pad-container);
+  padding-bottom: var(--pad-container);
+}
+
 .main-portfolio-list .bt {
   font-family: 'Roboto', sans-serif;
   border: none;
@@ -524,7 +546,7 @@ section:last-child {
 }
 
 .main-portfolio-project > .item {
-  flex-basis: calc(100% / 3 - var(--set-gap) - 6px);
+  flex-basis: calc(100% / 3 - var(--set-gap) - 3px);
   margin-right: var(--set-gap);
   margin-top: var(--set-gap);
 
