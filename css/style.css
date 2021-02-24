@@ -13,7 +13,13 @@
   --set-gap: 30px;
   --bgr-hero: rgba(47, 48, 58, 0.4);
   --bord-customers: rgba(175, 177, 184, 1);
-  --pad-container: 94px
+  --pad-container: 94px;
+  --filtr-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 body {
@@ -204,7 +210,7 @@ section:last-child {
 }
 
 /*accomplishments*/
-.main-accomplishments .container{
+.main-accomplishments .container {
   padding-top: var(--pad-container);
   padding-bottom: var(--pad-container);
 }
@@ -249,7 +255,7 @@ section:last-child {
 }
 
 /*employment*/
-.main-employment .container{
+.main-employment .container {
   padding-bottom: var(--pad-container);
 }
 
@@ -279,12 +285,12 @@ section:last-child {
   background-color: var(--bgr-wgray);
 }
 
-.main-team .container{
+.main-team .container {
   padding-top: var(--pad-container);
   padding-bottom: var(--pad-container);
 }
 
-.main-team-frame{
+.main-team-frame {
   padding: 30px 32px;
 }
 
@@ -307,7 +313,7 @@ section:last-child {
   text-align: center;
 }
 
-.main-team h2{
+.main-team h2 {
   margin-bottom: 50px;
 }
 
@@ -322,9 +328,7 @@ section:last-child {
   background-color: var(--white-text);
 
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  box-shadow: var(--team-shadow);
   flex-basis: calc(100% / 4 - var(--set-gap));
   margin-top: var(--set-gap);
   margin-right: var(--set-gap);
@@ -368,12 +372,12 @@ section:last-child {
 
 /*customers*/
 
-.main-customers .container{
+.main-customers .container {
   padding-top: var(--pad-container);
   padding-bottom: var(--pad-container);
 }
 
-.main-customers h2{
+.main-customers h2 {
   margin-bottom: 70px;
 }
 
@@ -480,7 +484,7 @@ section:last-child {
 
 /*portfolio button*/
 
-.main-portfolio .container{
+.main-portfolio .container {
   padding-top: var(--pad-container);
   padding-bottom: var(--pad-container);
 }
@@ -502,6 +506,7 @@ section:last-child {
 .main-portfolio-list .bt:focus {
   background-color: var(--blue-text);
   color: var(--white-text);
+  box-shadow: var(--filtr-shadow);
 }
 
 .main-portfolio-list {
@@ -556,8 +561,7 @@ section:last-child {
 }
 
 .main-portfolio-project > .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: var(--portfolio-card-shadow);
 }
 
 .main-portfolio-project .link {
