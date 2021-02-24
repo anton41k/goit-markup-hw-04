@@ -303,6 +303,7 @@ section:last-child {
 
 .main-team-ul {
   display: flex;
+  flex-wrap: wrap;
   margin-top: calc(-1 * var(--set-gap));
   margin-right: calc(-1 * var(--set-gap));
 }
@@ -364,11 +365,13 @@ section:last-child {
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--set-gap));
+  margin-top: calc(-1 * var(--set-gap));
 }
 
 .main-customers-ul .item {
   flex-basis: calc(100% / 6 - var(--set-gap));
   margin-right: var(--set-gap);
+  margin-top: var(--set-gap);
 }
 
 .main-customers-ul .link {
@@ -521,9 +524,13 @@ section:last-child {
 }
 
 .main-portfolio-project > .item {
-  flex-basis: calc(100% / 3 - var(--set-gap));
+  flex-basis: calc(100% / 3 - var(--set-gap) - 6px);
   margin-right: var(--set-gap);
   margin-top: var(--set-gap);
+
+  border-left: 1px solid var(--gray-border);
+  border-right: 1px solid var(--gray-border);
+  border-bottom: 1px solid var(--gray-border);
 }
 
 .main-portfolio-project > .item:hover {
@@ -538,14 +545,13 @@ section:last-child {
 
 .main-portfolio-project .frame-name-project {
   padding: 20px 24px;
-  flex-grow: 1;
-/*}
+}
 
-.main-portfolio-project .item {*/
+/*.main-portfolio-project .item {
   border-left: 1px solid var(--gray-border);
   border-right: 1px solid var(--gray-border);
   border-bottom: 1px solid var(--gray-border);
-}
+}*/
 
 .main-portfolio-project .project {
   margin-top: 4px;
